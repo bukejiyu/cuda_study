@@ -308,7 +308,3 @@ torch::Tensor scan_then_fan(torch::Tensor input) {
     return output;
 }
 
-PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {
-    m.def("scan_then_fan", &scan_then_fan, "Scan-then-fan prefix sum");
-    // m.def("scan_then_fan_debug", &scan_then_fan_debug, "Debug scan-then-fan prefix sum");
-}
